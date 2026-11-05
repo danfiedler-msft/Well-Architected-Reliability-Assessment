@@ -17,9 +17,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@0717577d45739eb3c851188b29f50ed6c0b2194e # v2.8.0
-        with:
-          ref: ${{ github.head_ref }}
-
+        
       - name: Set up Git
         run: |
           git config --global user.name 'github-actions[bot]'
